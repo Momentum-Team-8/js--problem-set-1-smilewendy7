@@ -153,15 +153,17 @@ function multigreeting (userName, langCode) {
 // divisor using the instructions above.
 
 
-    let d= 0; 
+    
     function gcd (a, b) {
+        
+        let d= 0; 
         
         while (a%2 === 0 && b%2 === 0) { 
             a = a/2;
             b = b/2;
             d = d + 1;
         }
-        while (a != b) {
+        while (a !== b) {
             if(a%2 === 0  ){
                 a = a/2;
             }
